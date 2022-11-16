@@ -14,5 +14,10 @@ function startModal(ModalID) {
 
 function recovery(id) {
     startModal('modal-recovery');
-    nav3.classList.add('active');
+
+    if (nav3.classList.contains('active') === false) {
+        nav3.classList.add('active');
+    } else {
+        nav3.classList.add('active')
+    }
 }
