@@ -12,8 +12,10 @@ function startModal(ModalID) {
     });
 }
 
-const recovery = document.querySelector('.recovery');
-recovery.addEventListener('click', () => {
-    startModal('modal-recovery');
-    nav3.classList.add('active');
-});
+function recovery(id) {
+    const recovery = document.querySelector('.recovery');
+    recovery.addEventListener('click', () => {
+        startModal('modal-recovery');
+        nav3.classList.add('active');
+    });
+}
