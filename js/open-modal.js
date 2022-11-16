@@ -13,9 +13,6 @@ function startModal(ModalID) {
 }
 
 function recovery(id) {
-    const recovery = document.querySelector('.recovery');
-    recovery.addEventListener('click', () => {
-        startModal('modal-recovery');
-        nav3.classList.add('active');
-    });
+    startModal('modal-recovery');
+    nav3.classList.add('active');
 }
