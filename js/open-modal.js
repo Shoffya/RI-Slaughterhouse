@@ -20,7 +20,7 @@ function recovery(id) {
             nav3.classList.add('active');
         }
         else {
-            nav2.classList.add('active')
+            nav3.classList.add('active')
         }
     }
 }
