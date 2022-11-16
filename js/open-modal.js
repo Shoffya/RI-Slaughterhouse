@@ -16,8 +16,11 @@ function recovery(id) {
     startModal('modal-recovery');
 
     if (nav3.classList.contains('active') === false) {
-        nav3.classList.add('active');
-    } else {
-        nav3.classList.add('active')
+        if (nav1.classList.contains('active') || nav2.classList.contains('active')) {
+            nav3.classList.add('active');
+        }
+        else {
+            nav2.classList.add('active')
+        }
     }
 }
