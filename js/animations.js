@@ -1,3 +1,4 @@
+var video = document.getElementById('background');
 var title = document.getElementById('title');
 var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
@@ -8,19 +9,27 @@ function onOff() {
         about.style.display = "none";
         title2.style.display = "none";
     }
-    if (nav2.classList.contains('active') === true || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    else if (nav2.classList.contains('active') === true || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         about.style.display = "flex";
         title.style.display = "none";
         title2.style.display = "none";
     }
-    if (nav3.classList.contains('active') === true || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+    else if (nav3.classList.contains('active') === true || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
         title2.style.display = "flex";
         title.style.display = "none";
         about.style.display = "none";
+    }
+
+}
+
+function playVideo() {
+    if (video.paused == true) {
+        video.playing;
     }
 }
 
 setInterval(() => {
     onOff();
+    playVideo();
     console.log(window.location.href)
 }, 500);
