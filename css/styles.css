@@ -178,7 +178,8 @@ section {
     align-items: center;
 }
 
-#content .title {
+#content .title,
+#content .title2 {
     width: 100vw;
     height: 100vh;
     display: flex;
