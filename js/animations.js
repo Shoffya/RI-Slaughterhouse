@@ -31,5 +31,5 @@ function playVideo() {
 setInterval(() => {
     onOff();
     playVideo();
-    console.log(window.location.href)
+    console.slog(window.location.href)
 }, 500);
