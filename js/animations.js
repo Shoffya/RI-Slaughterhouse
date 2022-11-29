@@ -4,7 +4,7 @@ var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
 
 function onOff() {
-    if (nav1.classList.contains('active') === true || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+    if (nav1.classList.contains('active') === true || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         video.play();
         about.style.display = "none";
         title2.style.display = "none";
@@ -27,4 +27,5 @@ function onOff() {
 
 setInterval(() => {
     onOff();
+    video.play();
 }, 500);
