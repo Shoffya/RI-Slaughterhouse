@@ -10,9 +10,10 @@ function onOff() {
         title.style.display = "none";
         about.style.display = "flex";
     }
-    // else if (nav3.classList.contains('active') === true) {
-    //     about.style.display = "none";
-    // }
+    if (nav3.classList.contains('active') === true) {
+        title.style.display = "none";
+        about.style.display = "none";
+    }
 }
 
 setInterval(() => {
