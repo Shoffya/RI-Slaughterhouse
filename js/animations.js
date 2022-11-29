@@ -23,8 +23,8 @@ function onOff() {
 }
 
 function playVideo() {
-    if (video.paused == true) {
-        video.playing;
+    if (video.pause() == true) {
+        video.play();
     }
 }
 
