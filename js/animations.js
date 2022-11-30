@@ -4,7 +4,10 @@ var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
 
 function onOff() {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content" || window.location.href == "http://127.0.0.1:5500/index.html") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+        video.play();
+    }
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         about.style.display = "none";
         title2.style.display = "none";
         title.style.display = "flex";
