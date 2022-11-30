@@ -4,17 +4,17 @@ var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
 
 function onOff() {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content" || window.location.href == "http://127.0.0.1:5500/index.html") {
         about.style.display = "none";
         title2.style.display = "none";
         title.style.display = "flex";
     }
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         title.style.display = "none";
         title2.style.display = "none";
         about.style.display = "flex";
     }
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
         title.style.display = "none";
         about.style.display = "none";
         title2.style.display = "flex";
