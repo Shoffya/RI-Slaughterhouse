@@ -22,7 +22,6 @@ var nav3 = document.getElementById('option3');
 //             nav3.classList.remove('active');
 //             nav2.classList.add('active');
 //         }
-
 //     }
 //     else {
 //         nav2.classList.add('active');
