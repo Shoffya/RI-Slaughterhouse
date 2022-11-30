@@ -27,6 +27,5 @@ function onOff() {
 }
 
 setInterval(() => {
-    video.play();
     onOff();
 }, 500);
