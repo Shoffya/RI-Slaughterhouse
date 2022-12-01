@@ -1,6 +1,6 @@
-// var nav1 = document.getElementById('option1');
-// var nav2 = document.getElementById('option2');
-// var nav3 = document.getElementById('option3');
+var nav1 = document.getElementById('option1');
+var nav2 = document.getElementById('option2');
+var nav3 = document.getElementById('option3');
 
 
 // function navbarActive1(id) {
