@@ -1,6 +1,6 @@
-var nav1 = document.getElementById('option1');
-var nav2 = document.getElementById('option2');
-var nav3 = document.getElementById('option3');
+// var nav1 = document.getElementById('option1');
+// var nav2 = document.getElementById('option2');
+// var nav3 = document.getElementById('option3');
 
 
 // function navbarActive1(id) {
@@ -22,6 +22,7 @@ var nav3 = document.getElementById('option3');
 //             nav3.classList.remove('active');
 //             nav2.classList.add('active');
 //         }
+
 //     }
 //     else {
 //         nav2.classList.add('active');
