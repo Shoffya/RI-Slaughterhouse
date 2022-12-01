@@ -4,7 +4,7 @@ var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
 
 function onOff() {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         about.style.display = "none";
         title2.style.display = "none";
         title.style.display = "flex";
