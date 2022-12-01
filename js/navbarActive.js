@@ -8,9 +8,15 @@ function navbarActive1(id) {
         nav2.classList.remove('active');
         nav3.classList.remove('active');
         nav1.classList.add('active');
+        about.style.display = "none";
+        title2.style.display = "none";
+        title.style.display = "flex";
     }
     else {
         nav1.classList.add('active');
+        about.style.display = "none";
+        title2.style.display = "none";
+        title.style.display = "flex";
     }
 }
 
@@ -19,10 +25,16 @@ function navbarActive2(id) {
         nav1.classList.remove('active');
         nav3.classList.remove('active');
         nav2.classList.add('active');
+        about.style.display = "none";
+        title2.style.display = "none";
+        title.style.display = "flex";
 
     }
     else {
         nav2.classList.add('active');
+        about.style.display = "none";
+        title2.style.display = "none";
+        title.style.display = "flex";
     }
 }
 
@@ -31,8 +43,14 @@ function navbarActive3(id) {
         nav1.classList.remove('active');
         nav2.classList.remove('active');
         nav3.classList.add('active');
+        title.style.display = "none";
+        about.style.display = "none";
+        title2.style.display = "flex";
     }
     else {
         nav3.classList.add('active');
+        title.style.display = "none";
+        about.style.display = "none";
+        title2.style.display = "flex";
     }
 }
