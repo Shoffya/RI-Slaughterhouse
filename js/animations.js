@@ -4,6 +4,9 @@ var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
 
 function onOff() {
+    title.style.display = "none";
+    about.style.display = "none";
+    title2.style.display = "none";
 
     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         setTimeout(() => {
