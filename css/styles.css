@@ -182,12 +182,19 @@ section {
 #content .title2 {
     width: 100vw;
     height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-shadow: #000 2px 2px 2px;
+}
+
+#content .title {
+    display: flex;
+}
+
+#content .title2 {
+    display: none;
 }
 
 #content .about {
