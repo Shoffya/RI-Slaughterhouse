@@ -8,9 +8,8 @@ var linkA = "https://shoffya.github.io/RI-Slaughterhouse/#about";
 var linkR = "https://shoffya.github.io/RI-Slaughterhouse/#title2";
 
 function onOff() {
-    video.play();
-    if (window.location.href == linkH || window.location.href == link) {
-        if (nav1.classList.contains('active') === false) {
+    if (nav1.classList.contains('active') === false) {
+        if (window.location.href == linkH || window.location.href == link) {
             if (nav2.classList.contains('active') || nav3.classList.contains('active')) {
                 nav2.classList.remove('active');
                 nav3.classList.remove('active');
@@ -26,9 +25,8 @@ function onOff() {
             title.style.display = "flex";
         }
     }
-    if (window.location.href == linkA) {
-
-        if (nav2.classList.contains('active') === false) {
+    if (nav2.classList.contains('active') === false) {
+        if (window.location.href == linkA) {
             if (nav1.classList.contains('active') || nav3.classList.contains('active')) {
                 nav1.classList.remove('active');
                 nav3.classList.remove('active');
@@ -45,8 +43,8 @@ function onOff() {
             about.style.display = "flex";
         }
     }
-    if (window.location.href == linkR) {
-        if (nav3.classList.contains('active') === false) {
+    if (nav3.classList.contains('active') === false) {
+        if (window.location.href == linkR) {
             if (nav1.classList.contains('active') || nav2.classList.contains('active')) {
                 nav1.classList.remove('active');
                 nav2.classList.remove('active');
