@@ -30,7 +30,6 @@ function navbarActive2(id) {
 }
 
 function navbarActive3(id) {
-
     if (nav3.classList.contains('active') === false) {
         if (nav1.classList.contains('active') || nav2.classList.contains('active') || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
             nav1.classList.remove('active');
