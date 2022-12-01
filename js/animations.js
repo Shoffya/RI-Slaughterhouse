@@ -8,7 +8,7 @@ function onOff() {
     about.style.display = "none";
     title2.style.display = "none";
 
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         setTimeout(() => {
             title.style.display = "flex";
             about.style.display = "none";
