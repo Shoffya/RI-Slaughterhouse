@@ -6,8 +6,7 @@ var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
-function onOff() {
-
+setInterval(() => {
     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
     }
@@ -44,14 +43,5 @@ function onOff() {
         nav3.classList.add('active');
 
         console.log("Title TESTE");
-    }
-}
-
-setInterval(() => {
-    if (document.location.reload(true)) {
-        onOff();
-    }
-    else {
-        onOff();
     }
 }, 500);
