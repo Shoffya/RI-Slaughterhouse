@@ -24,7 +24,6 @@ setInterval(() => {
             nav2.classList.remove('active');
             nav3.classList.add('active');
         }
-        links();
     });
     links();
 }, 500);
