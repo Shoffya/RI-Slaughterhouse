@@ -48,8 +48,6 @@ var navBarList = document.getElementById('navBarList');
 setInterval(() => {
     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
-        nav2.classList.remove('active');
-        nav3.classList.remove('active');
         nav1.classList.add('active');
     }
     else {
