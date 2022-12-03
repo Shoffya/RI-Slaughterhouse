@@ -8,11 +8,10 @@ var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
 setInterval(() => {
-    links();
     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
     }
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content" && nav1.classList.contains('active')) {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
 
         title.style.display = "flex";
         about.style.display = "none";
@@ -20,7 +19,7 @@ setInterval(() => {
 
         console.log("Content");
     }
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about" && nav2.classList.contains('active')) {
+    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
 
         about.style.display = "flex";
         title.style.display = "none";
@@ -29,7 +28,7 @@ setInterval(() => {
         console.log("About");
     }
 
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2" && nav3.classList.contains('active')) {
+    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
 
         title2.style.display = "flex";
         title.style.display = "none";
