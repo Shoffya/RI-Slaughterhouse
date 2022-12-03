@@ -1,7 +1,7 @@
 var video = document.getElementById('background');
 var title = document.getElementById('title');
 var about = document.getElementById('about');
-// var title2 = document.getElementById('title2');
+var title2 = document.getElementById('title2');
 
 // function onOff() {
 //     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {

@@ -13,6 +13,9 @@ function navbarActive1(id) {
         nav1.classList.add('active');
 
     } else {
+        title.style.display = "flex";
+        about.style.display = "none";
+        title2.style.display = "none";
         nav1.classList.add('active');
     }
 }
@@ -28,6 +31,9 @@ function navbarActive2(id) {
     }
 
     else {
+        about.style.display = "flex";
+        title.style.display = "none";
+        title2.style.display = "none";
         nav2.classList.add('active');
     }
 }
@@ -42,6 +48,9 @@ function navbarActive3(id) {
         nav3.classList.add('active');
     }
     else {
+        title2.style.display = "flex";
+        title.style.display = "none";
+        about.style.display = "none";
         nav3.classList.add('active');
     }
 }
