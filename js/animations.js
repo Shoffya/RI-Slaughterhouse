@@ -51,5 +51,7 @@ setInterval(() => {
     if (document.location.reload(true)) {
         onOff();
     }
-    onOff();
+    else {
+        onOff();
+    }
 }, 500);
