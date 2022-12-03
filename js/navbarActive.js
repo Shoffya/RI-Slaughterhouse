@@ -24,12 +24,16 @@ setInterval(() => {
             nav2.classList.remove('active');
             nav3.classList.add('active');
         }
+        links();
     });
     links();
 }, 500);
 
 function links() {
-    if (window.location.href === "https://shoffya.github.io/RI-Slaughterhouse/#content" && nav1.classList.contains('active')) {
+    if (window.location.href === "https://shoffya.github.io/RI-Slaughterhouse/") {
+        window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
+    }
+    else if (window.location.href === "https://shoffya.github.io/RI-Slaughterhouse/#content" && nav1.classList.contains('active')) {
 
         title.style.display = "flex";
         about.style.display = "none";
