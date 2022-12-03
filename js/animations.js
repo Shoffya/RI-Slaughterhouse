@@ -19,6 +19,8 @@ function onOff() {
         nav3.classList.remove('active');
         nav1.classList.add('active');
 
+        console.log("Content");
+
     }
     else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
 
@@ -28,6 +30,8 @@ function onOff() {
         nav1.classList.remove('active');
         nav3.classList.remove('active');
         nav2.classList.add('active');
+
+        console.log("About");
     }
 
     else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
@@ -38,6 +42,8 @@ function onOff() {
         nav1.classList.remove('active');
         nav2.classList.remove('active');
         nav3.classList.add('active');
+
+        console.log("Title TESTE");
     }
 }
 
