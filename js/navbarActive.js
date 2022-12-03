@@ -16,7 +16,7 @@ setInterval(() => {
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
-
+        links();
         console.log("Content");
     }
     else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
@@ -24,7 +24,7 @@ setInterval(() => {
         about.style.display = "flex";
         title.style.display = "none";
         title2.style.display = "none";
-
+        links();
         console.log("About");
     }
 
@@ -33,7 +33,7 @@ setInterval(() => {
         title2.style.display = "flex";
         title.style.display = "none";
         about.style.display = "none";
-
+        links();
         console.log("Title TESTE");
     }
 }, 500);
