@@ -48,5 +48,8 @@ function onOff() {
 }
 
 setInterval(() => {
+    if (document.location.reload(true)) {
+        onOff();
+    }
     onOff();
 }, 500);
