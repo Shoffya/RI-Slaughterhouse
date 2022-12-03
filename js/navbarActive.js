@@ -4,7 +4,7 @@ var nav3 = document.getElementById('option3');
 
 
 function navbarActive1(id) {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
