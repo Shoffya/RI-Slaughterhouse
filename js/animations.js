@@ -7,7 +7,7 @@ var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
 function onOff() {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
