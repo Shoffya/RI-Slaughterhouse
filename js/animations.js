@@ -11,7 +11,7 @@ function onOff() {
     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
     }
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
