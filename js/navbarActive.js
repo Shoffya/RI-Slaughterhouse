@@ -8,6 +8,7 @@ var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
 setInterval(() => {
+    links();
     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
         window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
     }
@@ -36,7 +37,6 @@ setInterval(() => {
 
         console.log("Title TESTE");
     }
-    links();
 }, 500);
 
 function links() {
