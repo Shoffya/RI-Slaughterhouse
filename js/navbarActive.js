@@ -7,9 +7,9 @@ var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
 // setInterval(() => {
-if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-        window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
+if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+    window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
 
         title.style.display = "flex";
         about.style.display = "none";
@@ -24,33 +24,25 @@ if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#conten
 }
 else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
 
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-        window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#about";
+    about.style.display = "flex";
+    title.style.display = "none";
+    title2.style.display = "none";
+    nav1.classList.remove('active');
+    nav3.classList.remove('active');
+    nav2.classList.add('active');
 
-        about.style.display = "flex";
-        title.style.display = "none";
-        title2.style.display = "none";
-        nav1.classList.remove('active');
-        nav3.classList.remove('active');
-        nav2.classList.add('active');
-
-        console.log("About");
-    }
+    console.log("About");
 }
 
 else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
 
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-        window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#title2";
+    title2.style.display = "flex";
+    title.style.display = "none";
+    about.style.display = "none";
+    nav1.classList.remove('active');
+    nav2.classList.remove('active');
+    nav3.classList.add('active');
 
-        title2.style.display = "flex";
-        title.style.display = "none";
-        about.style.display = "none";
-        nav1.classList.remove('active');
-        nav2.classList.remove('active');
-        nav3.classList.add('active');
-
-        console.log("Title TESTE");
-    }
+    console.log("Title TESTE");
 }
 // }, 500);
