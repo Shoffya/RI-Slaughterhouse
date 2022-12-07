@@ -1,4 +1,3 @@
-var video = document.getElementById('background');
 var title = document.getElementById('title');
 var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
@@ -23,7 +22,7 @@ nav1.addEventListener('click', () => {
         title2.style.display = "none";
     }
 
-    window.location.reload();
+    window.location.reload(true);
 });
 
 nav2.addEventListener('click', () => {
@@ -44,7 +43,7 @@ nav2.addEventListener('click', () => {
         title2.style.display = "none";
     }
 
-    window.location.reload();
+    window.location.reload(true);
 });
 
 nav3.addEventListener('click', () => {
@@ -64,7 +63,7 @@ nav3.addEventListener('click', () => {
         title2.style.display = "flex";
     }
 
-    window.location.reload();
+    window.location.reload(true);
 });
 
 // setInterval(() => {
