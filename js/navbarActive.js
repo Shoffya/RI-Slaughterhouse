@@ -42,6 +42,8 @@ setInterval(() => {
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
+
+        console.log("/ e content");
     }
 
     else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
@@ -51,6 +53,8 @@ setInterval(() => {
         title.style.display = "none";
         about.style.display = "flex";
         title2.style.display = "none";
+
+        console.log("about");
     }
 
     else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
@@ -60,5 +64,7 @@ setInterval(() => {
         title.style.display = "none";
         about.style.display = "none";
         title2.style.display = "flex";
+
+        console.log("title2");
     }
 }, 500);
