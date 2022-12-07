@@ -5,7 +5,9 @@ var title2 = document.getElementById('title2');
 var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
-var test = "https://shoffya.github.io/RI-Slaughterhouse/";
+
+var test = window.location.href;
+test = "https://shoffya.github.io/RI-Slaughterhouse/";
 
 nav1.addEventListener('click', () => {
     if (nav1.classList.contains('active') === false) {
@@ -53,25 +55,25 @@ nav3.addEventListener('click', () => {
 setInterval(() => {
 
     switch (test) {
-        case "https://shoffya.github.io/RI-Slaughterhouse/":
+        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/":
             console.log('/');
             title.style.display = "flex";
             about.style.display = "none";
             title2.style.display = "none";
             break;
-        case "https://shoffya.github.io/RI-Slaughterhouse/#content":
+        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content":
             console.log('content');
             title.style.display = "flex";
             about.style.display = "none";
             title2.style.display = "none";
             break;
-        case "https://shoffya.github.io/RI-Slaughterhouse/#about":
+        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about":
             console.log('about');
             title.style.display = "none";
             about.style.display = "flex";
             title2.style.display = "none";
             break;
-        case "https://shoffya.github.io/RI-Slaughterhouse/#title2":
+        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2":
             console.log('title2');
 
             title.style.display = "none";
