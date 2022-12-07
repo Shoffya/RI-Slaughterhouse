@@ -6,9 +6,13 @@ var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
-var test = window.location.href;
+var test = 0;
 
 function navBar() {
+
+}
+
+setInterval(() => {
     nav1.addEventListener('click', () => {
         if (nav1.classList.contains('active') === false) {
             if (nav2.classList.contains('active') || nav3.classList.contains('active')) {
@@ -20,7 +24,7 @@ function navBar() {
             nav1.classList.add('active')
         }
 
-        test = "https://shoffya.github.io/RI-Slaughterhouse/#content";
+        test = 1;
     });
 
     nav2.addEventListener('click', () => {
@@ -35,7 +39,7 @@ function navBar() {
             nav2.classList.add('active')
         }
 
-        test = "https://shoffya.github.io/RI-Slaughterhouse/#about";
+        test = 2;
     });
 
     nav3.addEventListener('click', () => {
@@ -49,40 +53,63 @@ function navBar() {
             nav3.classList.add('active')
         }
 
-        test = "https://shoffya.github.io/RI-Slaughterhouse/#title2";
+        test = 3;
     });
-}
 
-setInterval(() => {
-    navBar();
-
-    switch (test) {
-        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/":
+    if (test = 0) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
             console.log('/');
-            title.style.display = "flex";
-            about.style.display = "none";
-            title2.style.display = "none";
-            break;
-        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content":
-            console.log('content');
-            title.style.display = "flex";
-            about.style.display = "none";
-            title2.style.display = "none";
-            break;
-        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about":
-            console.log('about');
-            title.style.display = "none";
-            about.style.display = "flex";
-            title2.style.display = "none";
-            break;
-        case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2":
-            console.log('title2');
+        }
 
-            title.style.display = "none";
-            about.style.display = "none";
-            title2.style.display = "flex";
-            break;
-        default:
-            console.log(`what's ?`);
+    }
+
+    if (test = 1) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+            console.log('content');
+        }
+
+    }
+
+    if (test = 2) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+            console.log('about');
+        }
+
+    }
+
+    if (test = 3) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+            console.log('title2');
+        }
     }
 }, 500);
+
+// switch (test) {
+//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/":
+//         console.log('/');
+//         title.style.display = "flex";
+//         about.style.display = "none";
+//         title2.style.display = "none";
+//         break;
+//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content":
+//         console.log('content');
+//         title.style.display = "flex";
+//         about.style.display = "none";
+//         title2.style.display = "none";
+//         break;
+//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about":
+//         console.log('about');
+//         title.style.display = "none";
+//         about.style.display = "flex";
+//         title2.style.display = "none";
+//         break;
+//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2":
+//         console.log('title2');
+
+//         title.style.display = "none";
+//         about.style.display = "none";
+//         title2.style.display = "flex";
+//         break;
+//     default:
+//         console.log(`what's ?`);
+// }
