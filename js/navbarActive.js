@@ -26,7 +26,7 @@ nav1.addEventListener('click', () => {
 });
 
 nav2.addEventListener('click', () => {
-    if (nav1.classList.contains('active') === false) {
+    if (nav2.classList.contains('active') === false) {
         if (nav1.classList.contains('active') || nav3.classList.contains('active')) {
             nav1.classList.remove('active')
             nav3.classList.remove('active')
@@ -54,7 +54,7 @@ nav3.addEventListener('click', () => {
             title2.style.display = "flex";
         }
     } else {
-        nav2.classList.add('active')
+        nav3.classList.add('active')
         title.style.display = "none";
         about.style.display = "none";
         title2.style.display = "flex";
