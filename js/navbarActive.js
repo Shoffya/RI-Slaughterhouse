@@ -5,7 +5,7 @@ var title2 = document.getElementById('title2');
 var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
-var test;
+var test = 0;
 
 nav1.addEventListener('click', () => {
     if (nav1.classList.contains('active') === false) {
@@ -16,18 +16,15 @@ nav1.addEventListener('click', () => {
             title.style.display = "flex";
             about.style.display = "none";
             title2.style.display = "none";
-
-            test = window.location.href;
         }
     } else {
         nav1.classList.add('active')
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
-
-        test = window.location.href;
     }
-    console.log(test);
+
+    test = 1;
 });
 
 nav2.addEventListener('click', () => {
@@ -40,17 +37,15 @@ nav2.addEventListener('click', () => {
             about.style.display = "flex";
             title2.style.display = "none";
 
-            test = window.location.href;
         }
     } else {
         nav2.classList.add('active')
         title.style.display = "none";
         about.style.display = "flex";
         title2.style.display = "none";
-
-        test = window.location.href;
     }
-    console.log(test);
+
+    test = 2;
 });
 
 nav3.addEventListener('click', () => {
@@ -62,16 +57,32 @@ nav3.addEventListener('click', () => {
             title.style.display = "none";
             about.style.display = "none";
             title2.style.display = "flex";
-
-            test = window.location.href;
         }
     } else {
         nav3.classList.add('active')
         title.style.display = "none";
         about.style.display = "none";
         title2.style.display = "flex";
-
-        test = window.location.href
     }
-    console.log(test);
+
+    test = 3;
 });
+
+setInterval(() => {
+    switch (test) {
+        case 0:
+            console.log('/');
+            break;
+        case 1:
+            console.log('content');
+            break;
+        case 2:
+            console.log('about');
+            break;
+        case 3:
+            console.log('title2');
+            break;
+        default:
+            console.log(`what's ?`);
+    }
+}, 500);
