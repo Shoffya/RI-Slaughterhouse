@@ -8,10 +8,6 @@ var nav3 = document.getElementById('option3');
 
 var test = 0;
 
-function navBar() {
-
-}
-
 setInterval(() => {
     nav1.addEventListener('click', () => {
         if (nav1.classList.contains('active') === false) {
@@ -56,60 +52,67 @@ setInterval(() => {
         test = 3;
     });
 
-    if (test = 0) {
-        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-            console.log('/');
-        }
-
-    }
-
-    if (test = 1) {
-        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
-            console.log('content');
-        }
-
-    }
-
-    if (test = 2) {
-        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
-            console.log('about');
-        }
-
-    }
-
-    if (test = 3) {
-        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
-            console.log('title2');
-        }
+    switch (test) {
+        case 0:
+            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+                console.log('/');
+                title.style.display = "flex";
+                about.style.display = "none";
+                title2.style.display = "none";
+            }
+            break;
+        case 1:
+            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+                console.log('content');
+                title.style.display = "flex";
+                about.style.display = "none";
+                title2.style.display = "none";
+            }
+            break;
+        case 2:
+            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+                console.log('about');
+                about.style.display = "flex";
+                title.style.display = "none";
+                title2.style.display = "none";
+            }
+            break;
+        case 3:
+            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+                console.log('title2');
+                title2.style.display = "flex";
+                title.style.display = "none";
+                about.style.display = "none";
+            }
+            break;
+        default:
+            console.log(`what's ?`);
     }
 }, 500);
 
-// switch (test) {
-//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/":
+// if (test = 0) {
+//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
 //         console.log('/');
-//         title.style.display = "flex";
-//         about.style.display = "none";
-//         title2.style.display = "none";
-//         break;
-//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content":
-//         console.log('content');
-//         title.style.display = "flex";
-//         about.style.display = "none";
-//         title2.style.display = "none";
-//         break;
-//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about":
-//         console.log('about');
-//         title.style.display = "none";
-//         about.style.display = "flex";
-//         title2.style.display = "none";
-//         break;
-//     case window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2":
-//         console.log('title2');
+//     }
 
-//         title.style.display = "none";
-//         about.style.display = "none";
-//         title2.style.display = "flex";
-//         break;
-//     default:
-//         console.log(`what's ?`);
+// }
+
+// if (test = 1) {
+//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+//         console.log('content');
+//     }
+
+// }
+
+// if (test = 2) {
+//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+//         console.log('about');
+//     }
+
+// }
+
+// if (test = 3) {
+//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+//         console.log('title2');
+//     }
 // }
