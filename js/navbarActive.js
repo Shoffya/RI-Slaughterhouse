@@ -5,6 +5,7 @@ var title2 = document.getElementById('title2');
 var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
+var test = "https://shoffya.github.io/RI-Slaughterhouse/";
 
 nav1.addEventListener('click', () => {
     if (nav1.classList.contains('active') === false) {
@@ -50,7 +51,7 @@ nav3.addEventListener('click', () => {
 });
 
 setInterval(() => {
-    var test = "https://shoffya.github.io/RI-Slaughterhouse/";
+
     switch (test) {
         case "https://shoffya.github.io/RI-Slaughterhouse/":
             console.log('/');
