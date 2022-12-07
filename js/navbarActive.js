@@ -5,7 +5,6 @@ var title2 = document.getElementById('title2');
 var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
-var test = 0;
 
 nav1.addEventListener('click', () => {
     if (nav1.classList.contains('active') === false) {
@@ -24,7 +23,7 @@ nav1.addEventListener('click', () => {
         title2.style.display = "none";
     }
 
-    test = 1;
+    window.location.reload();
 });
 
 nav2.addEventListener('click', () => {
@@ -45,7 +44,7 @@ nav2.addEventListener('click', () => {
         title2.style.display = "none";
     }
 
-    test = 2;
+    window.location.reload();
 });
 
 nav3.addEventListener('click', () => {
@@ -65,24 +64,24 @@ nav3.addEventListener('click', () => {
         title2.style.display = "flex";
     }
 
-    test = 3;
+    window.location.reload();
 });
 
-setInterval(() => {
-    switch (test) {
-        case 0:
-            console.log('/');
-            break;
-        case 1:
-            console.log('content');
-            break;
-        case 2:
-            console.log('about');
-            break;
-        case 3:
-            console.log('title2');
-            break;
-        default:
-            console.log(`what's ?`);
-    }
-}, 500);
+// setInterval(() => {
+//     switch (test) {
+//         case 0:
+//             console.log('/');
+//             break;
+//         case 1:
+//             console.log('content');
+//             break;
+//         case 2:
+//             console.log('about');
+//             break;
+//         case 3:
+//             console.log('title2');
+//             break;
+//         default:
+//             console.log(`what's ?`);
+//     }
+// }, 500);
