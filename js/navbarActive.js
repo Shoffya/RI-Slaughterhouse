@@ -18,8 +18,6 @@ nav1.addEventListener('click', () => {
             title2.style.display = "none";
 
             test = window.location.href;
-
-            console.log(test);
         }
     } else {
         nav1.classList.add('active')
@@ -28,9 +26,8 @@ nav1.addEventListener('click', () => {
         title2.style.display = "none";
 
         test = window.location.href;
-
-        console.log(test);
     }
+    console.log(test);
 });
 
 nav2.addEventListener('click', () => {
@@ -44,8 +41,6 @@ nav2.addEventListener('click', () => {
             title2.style.display = "none";
 
             test = window.location.href;
-
-            console.log(test);
         }
     } else {
         nav2.classList.add('active')
@@ -54,9 +49,8 @@ nav2.addEventListener('click', () => {
         title2.style.display = "none";
 
         test = window.location.href;
-
-        console.log(test);
     }
+    console.log(test);
 });
 
 nav3.addEventListener('click', () => {
@@ -70,8 +64,6 @@ nav3.addEventListener('click', () => {
             title2.style.display = "flex";
 
             test = window.location.href;
-
-            console.log(test);
         }
     } else {
         nav3.classList.add('active')
@@ -79,8 +71,7 @@ nav3.addEventListener('click', () => {
         about.style.display = "none";
         title2.style.display = "flex";
 
-        test = window.location.href;
-
-        console.log(test);
+        test = window.location.href
     }
+    console.log(test);
 });
