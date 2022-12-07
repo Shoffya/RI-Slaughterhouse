@@ -9,7 +9,8 @@ var nav3 = document.getElementById('option3');
 
 
 setInterval(() => {
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+        window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content"
         nav2.classList.remove('active');
         nav3.classList.remove('active');
         nav1.classList.add('active');
