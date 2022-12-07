@@ -16,12 +16,20 @@ nav1.addEventListener('click', () => {
             title.style.display = "flex";
             about.style.display = "none";
             title2.style.display = "none";
+
+            test = window.location.href;
+
+            console.log(test);
         }
     } else {
         nav1.classList.add('active')
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
+
+        test = window.location.href;
+
+        console.log(test);
     }
 });
 
@@ -34,12 +42,20 @@ nav2.addEventListener('click', () => {
             title.style.display = "none";
             about.style.display = "flex";
             title2.style.display = "none";
+
+            test = window.location.href;
+
+            console.log(test);
         }
     } else {
         nav2.classList.add('active')
         title.style.display = "none";
         about.style.display = "flex";
         title2.style.display = "none";
+
+        test = window.location.href;
+
+        console.log(test);
     }
 });
 
@@ -52,11 +68,19 @@ nav3.addEventListener('click', () => {
             title.style.display = "none";
             about.style.display = "none";
             title2.style.display = "flex";
+
+            test = window.location.href;
+
+            console.log(test);
         }
     } else {
         nav3.classList.add('active')
         title.style.display = "none";
         about.style.display = "none";
         title2.style.display = "flex";
+
+        test = window.location.href;
+
+        console.log(test);
     }
 });
