@@ -8,75 +8,55 @@ var nav3 = document.getElementById('option3');
 var test;
 
 nav1.addEventListener('click', () => {
-    nav2.classList.remove('active');
-    nav3.classList.remove('active');
-    nav1.classList.add('active');
-    title.style.display = "flex";
-    about.style.display = "none";
-    title2.style.display = "none";
-
-    console.log("/ e content active");
-
-    test = 1;
-});
-
-nav2.addEventListener('click', () => {
-    nav1.classList.remove('active');
-    nav3.classList.remove('active');
-    nav2.classList.add('active');
-    title.style.display = "none";
-    about.style.display = "flex";
-    title2.style.display = "none";
-
-    console.log("about active");
-
-    test = 2;
-});
-
-nav3.addEventListener('click', () => {
-    nav1.classList.remove('active');
-    nav2.classList.remove('active');
-    nav3.classList.add('active');
-    title.style.display = "none";
-    about.style.display = "none";
-    title2.style.display = "flex";
-
-    console.log("title2 active");
-
-    test = 3;
-});
-
-setInterval(() => {
-    if (test == 1) {
-        nav2.classList.remove('active');
-        nav3.classList.remove('active');
-        nav1.classList.add('active');
+    if (nav1.classList.contains('active') === false) {
+        if (nav2.classList.contains('active') || nav3.classList.contains('active')) {
+            nav2.classList.remove('active')
+            nav3.classList.remove('active')
+            nav1.classList.add('active')
+            title.style.display = "flex";
+            about.style.display = "none";
+            title2.style.display = "none";
+        }
+    } else {
+        nav1.classList.add('active')
         title.style.display = "flex";
         about.style.display = "none";
         title2.style.display = "none";
-
-        console.log("/ e content");
     }
+});
 
-    if (test == 2) {
-        nav1.classList.remove('active');
-        nav3.classList.remove('active');
-        nav2.classList.add('active');
+nav2.addEventListener('click', () => {
+    if (nav1.classList.contains('active') === false) {
+        if (nav1.classList.contains('active') || nav3.classList.contains('active')) {
+            nav1.classList.remove('active')
+            nav3.classList.remove('active')
+            nav2.classList.add('active')
+            title.style.display = "none";
+            about.style.display = "flex";
+            title2.style.display = "none";
+        }
+    } else {
+        nav2.classList.add('active')
         title.style.display = "none";
         about.style.display = "flex";
         title2.style.display = "none";
-
-        console.log("about");
     }
+});
 
-    if (test == 3) {
-        nav1.classList.remove('active');
-        nav2.classList.remove('active');
-        nav3.classList.add('active');
+nav3.addEventListener('click', () => {
+    if (nav3.classList.contains('active') === false) {
+        if (nav1.classList.contains('active') || nav2.classList.contains('active')) {
+            nav1.classList.remove('active')
+            nav2.classList.remove('active')
+            nav3.classList.add('active')
+            title.style.display = "none";
+            about.style.display = "none";
+            title2.style.display = "flex";
+        }
+    } else {
+        nav2.classList.add('active')
         title.style.display = "none";
         about.style.display = "none";
         title2.style.display = "flex";
-
-        console.log("title2");
     }
-}, 500);
+});
