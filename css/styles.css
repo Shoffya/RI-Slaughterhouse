@@ -225,7 +225,9 @@ section {
 #home .recoverPassword .form {
     width: 60%;
     min-width: 300px;
-    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: rebeccapurple;
 }
 
