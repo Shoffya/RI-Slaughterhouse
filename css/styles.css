@@ -10,7 +10,6 @@
 body {
     overflow-x: hidden;
     user-select: none;
-    background: rgba(255, 0, 0, 0.39);
 }
 
 /* Scroll Body */
@@ -162,7 +161,6 @@ nav {
 section {
     height: auto;
     overflow: hidden;
-    background: red;
 }
 
 #background {
@@ -179,8 +177,7 @@ section {
     align-items: center;
 }
 
-#home .homeStart,
-#home .recoverPassword {
+#home .homeStart {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
@@ -194,9 +191,7 @@ section {
     display: none;
 }
 
-#home .recoverPassword {
-    display: none;
-}
+
 
 #home .about {
     width: 100vw;
@@ -216,4 +211,24 @@ section {
     align-items: center;
     color: black;
     overflow: hidden;
+}
+
+#home .recoverPassword {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.527);
+}
+
+#home .recoverPassword .form {
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    background: rebeccapurple;
+}
+
+#home .recoverPassword {
+    display: none;
 }
