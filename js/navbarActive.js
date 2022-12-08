@@ -61,53 +61,49 @@ nav3.addEventListener('click', () => {
 
 setInterval(() => {
 
-    switch (test) {
-        case 0:
-            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-                console.log('/');
-                nav2.classList.remove('active')
-                nav3.classList.remove('active')
-                nav1.classList.add('active')
-                title.style.display = "flex";
-                about.style.display = "none";
-                title2.style.display = "none";
-            }
-            break;
-        case 1:
-            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
-                console.log('content');
-                nav2.classList.remove('active')
-                nav3.classList.remove('active')
-                nav1.classList.add('active')
-                title.style.display = "flex";
-                about.style.display = "none";
-                title2.style.display = "none";
-            }
-            break;
-        case 2:
-            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
-                console.log('about');
-                nav1.classList.remove('active')
-                nav3.classList.remove('active')
-                nav2.classList.add('active')
-                about.style.display = "flex";
-                title.style.display = "none";
-                title2.style.display = "none";
-            }
-            break;
-        case 3:
-            if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
-                console.log('title2');
-                nav1.classList.remove('active')
-                nav2.classList.remove('active')
-                nav3.classList.add('active')
-                title2.style.display = "flex";
-                title.style.display = "none";
-                about.style.display = "none";
-            }
-            break;
-        default:
-            console.log(`what's ?`);
+    if (test = 0) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+            console.log('/');
+            nav2.classList.remove('active')
+            nav3.classList.remove('active')
+            nav1.classList.add('active')
+            title.style.display = "flex";
+            about.style.display = "none";
+            title2.style.display = "none";
+        }
+    }
+    if (test = 1) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+            console.log('content');
+            nav2.classList.remove('active')
+            nav3.classList.remove('active')
+            nav1.classList.add('active')
+            title.style.display = "flex";
+            about.style.display = "none";
+            title2.style.display = "none";
+        }
+    }
+    if (test = 2) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+            console.log('about');
+            nav1.classList.remove('active')
+            nav3.classList.remove('active')
+            nav2.classList.add('active')
+            about.style.display = "flex";
+            title.style.display = "none";
+            title2.style.display = "none";
+        }
+    }
+    if (test = 3) {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+            console.log('title2');
+            nav1.classList.remove('active')
+            nav2.classList.remove('active')
+            nav3.classList.add('active')
+            title2.style.display = "flex";
+            title.style.display = "none";
+            about.style.display = "none";
+        }
     }
 }, 500);
 
