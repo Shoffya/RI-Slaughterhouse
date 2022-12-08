@@ -53,7 +53,10 @@ var nav3 = document.getElementById('option3');
 
 setInterval(() => {
 
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/" || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+        window.location.href = "https://shoffya.github.io/RI-Slaughterhouse/#content";
+    }
+    if (nav1.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         console.log('/ ou content');
         nav2.classList.remove('active')
         nav3.classList.remove('active')
@@ -62,7 +65,7 @@ setInterval(() => {
         title2.style.display = "none";
         title.style.display = "flex";
     }
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    if (nav2.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         console.log('about');
         nav1.classList.remove('active')
         nav3.classList.remove('active')
@@ -71,7 +74,7 @@ setInterval(() => {
         title2.style.display = "none";
         about.style.display = "flex";
     }
-    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+    if (nav3.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
         console.log('title2');
         nav1.classList.remove('active')
         nav2.classList.remove('active')
