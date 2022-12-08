@@ -183,19 +183,12 @@ section {
 #content .recovery {
     width: 100vw;
     height: 100vh;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-shadow: #000 2px 2px 2px;
-}
-
-#content .home {
-    display: none;
-}
-
-#content .recovery {
-    display: none;
 }
 
 #content .about {
@@ -219,4 +212,4 @@ section {
 }
 
 /* Responsive */
-@media (max-width: 1364) {}
+/* @media (max-width: 1364) {} */
