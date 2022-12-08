@@ -222,15 +222,45 @@ section {
     background: rgba(255, 255, 255, 0.527);
 }
 
+#home .recoverPassword {
+    display: none;
+}
+
 #home .recoverPassword .form {
+
     width: 60%;
     min-width: 300px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rebeccapurple;
 }
 
-#home .recoverPassword {
-    display: none;
+#home .recoverPassword .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .recoverPassword .form h3 {
+    margin-top: 10px;
+}
+
+#home .recoverPassword .form form .email {
+    margin: 10px 5px;
+}
+
+#home .recoverPassword .form form .button {
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border: none;
+    background: #ffffff7c;
+    color: black;
+    border-radius: 5px;
+}
+
+#home .recoverPassword .form form .button:hover {
+    background: #0000007c;
+    color: white;
 }
