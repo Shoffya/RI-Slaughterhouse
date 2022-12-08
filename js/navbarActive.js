@@ -6,7 +6,7 @@ var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
-var test = 0;
+var test;
 
 nav1.addEventListener('click', () => {
     if (nav1.classList.contains('active') === false) {
@@ -61,17 +61,6 @@ nav3.addEventListener('click', () => {
 
 setInterval(() => {
 
-    if (test = 0) {
-        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-            console.log('/');
-            nav2.classList.remove('active')
-            nav3.classList.remove('active')
-            nav1.classList.add('active')
-            title.style.display = "flex";
-            about.style.display = "none";
-            title2.style.display = "none";
-        }
-    }
     if (test = 1) {
         if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
             console.log('content');
@@ -83,7 +72,7 @@ setInterval(() => {
             title2.style.display = "none";
         }
     }
-    if (test = 2) {
+    else if (test = 2) {
         if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
             console.log('about');
             nav1.classList.remove('active')
@@ -94,7 +83,7 @@ setInterval(() => {
             title2.style.display = "none";
         }
     }
-    if (test = 3) {
+    else if (test = 3) {
         if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
             console.log('title2');
             nav1.classList.remove('active')
@@ -103,6 +92,17 @@ setInterval(() => {
             title2.style.display = "flex";
             title.style.display = "none";
             about.style.display = "none";
+        }
+    }
+    else {
+        if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
+            console.log('/');
+            nav2.classList.remove('active')
+            nav3.classList.remove('active')
+            nav1.classList.add('active')
+            title.style.display = "flex";
+            about.style.display = "none";
+            title2.style.display = "none";
         }
     }
 }, 500);
