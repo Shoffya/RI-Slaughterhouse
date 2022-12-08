@@ -180,7 +180,7 @@ section {
 }
 
 #content .title,
-#content .title2 {
+#content .recoverPassword {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
@@ -194,7 +194,7 @@ section {
     display: none;
 }
 
-#content .title2 {
+#content .recoverPassword {
     display: none;
 }
 
