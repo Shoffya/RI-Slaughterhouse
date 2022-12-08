@@ -66,6 +66,6 @@ setInterval(() => {
         console.log("title2");
     }
     else {
-        console.log("/");
+        console.log(".../");
     }
 }, 500);
