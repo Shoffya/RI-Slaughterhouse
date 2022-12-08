@@ -1,4 +1,3 @@
-var video = document.getElementById('background');
 var home = document.getElementById('home');
 var about = document.getElementById('about');
 var recovery = document.getElementById('recovery');
