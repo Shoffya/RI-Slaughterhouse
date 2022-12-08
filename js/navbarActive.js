@@ -65,7 +65,7 @@ setInterval(() => {
         title2.style.display = "none";
         title.style.display = "flex";
     }
-    else if (nav2.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    else i(nav2.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         console.log('about');
         nav1.classList.remove('active')
         nav3.classList.remove('active')
