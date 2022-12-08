@@ -4,7 +4,7 @@ var about = document.getElementById('about');
 var title2 = document.getElementById('title2');
 var nav1 = document.getElementById('option1');
 var nav2 = document.getElementById('option2');
-var nav = document.getElementById('option3');
+var nav3 = document.getElementById('option3');
 
 // nav1.addEventListener('click', () => {
 //     if (nav1.classList.contains('active') === false) {
