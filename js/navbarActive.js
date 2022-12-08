@@ -66,5 +66,11 @@ setInterval(() => {
     }
     else {
         console.log("/");
+        nav2.classList.remove('active');
+        nav3.classList.remove('active');
+        nav1.classList.add('active');
+        title.style.display = "flex";
+        about.style.display = "none";
+        title2.style.display = "none";
     }
 }, 500);

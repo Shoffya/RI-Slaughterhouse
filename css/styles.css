@@ -190,7 +190,7 @@ section {
 }
 
 #content .title {
-    display: flex;
+    display: none;
 }
 
 #content .title2 {
