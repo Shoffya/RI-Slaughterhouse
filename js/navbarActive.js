@@ -62,7 +62,7 @@ setInterval(() => {
         title2.style.display = "none";
         title.style.display = "flex";
     }
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         console.log('about');
         nav1.classList.remove('active')
         nav3.classList.remove('active')
@@ -71,7 +71,7 @@ setInterval(() => {
         title2.style.display = "none";
         about.style.display = "flex";
     }
-    else if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+    if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
         console.log('title2');
         nav1.classList.remove('active')
         nav2.classList.remove('active')
