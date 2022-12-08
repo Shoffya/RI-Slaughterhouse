@@ -171,7 +171,7 @@ section {
     display: flex;
 }
 
-#content {
+#home {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -179,8 +179,8 @@ section {
     align-items: center;
 }
 
-#content .title,
-#content .recoverPassword {
+#home .homeStart,
+#home .recoverPassword {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
@@ -190,15 +190,15 @@ section {
     text-shadow: #000 2px 2px 2px;
 }
 
-#content .title {
+#home .homeStart {
     display: none;
 }
 
-#content .recoverPassword {
+#home .recoverPassword {
     display: none;
 }
 
-#content .about {
+#home .about {
     width: 100vw;
     height: 100vh;
     display: none;
@@ -207,7 +207,7 @@ section {
     background: rgba(255, 255, 255, 0.527);
 }
 
-#content .about .text {
+#home .about .text {
     width: 100%;
     height: 100%;
     display: flex;
