@@ -180,7 +180,7 @@ section {
 }
 
 #content .home,
-#content .recovery {
+#content .recoveryP {
     width: 100vw;
     height: 100vh;
     display: none;
