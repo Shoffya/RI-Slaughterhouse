@@ -61,7 +61,7 @@ nav3.addEventListener('click', () => {
 
 setInterval(() => {
 
-    if (test = 1 && window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
+    if (test = 1 || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
         console.log('content');
         nav2.classList.remove('active')
         nav3.classList.remove('active')
@@ -70,7 +70,7 @@ setInterval(() => {
         about.style.display = "none";
         title2.style.display = "none";
     }
-    else if (test = 2 && window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    else if (test = 2 || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         console.log('about');
         nav1.classList.remove('active')
         nav3.classList.remove('active')
@@ -79,7 +79,7 @@ setInterval(() => {
         title.style.display = "none";
         title2.style.display = "none";
     }
-    else if (test = 3 && window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
+    else if (test = 3 || window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
         console.log('title2');
         nav1.classList.remove('active')
         nav2.classList.remove('active')
@@ -98,30 +98,3 @@ setInterval(() => {
         title2.style.display = "none";
     }
 }, 500);
-
-// if (test = 0) {
-//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/") {
-//         console.log('/');
-//     }
-
-// }
-
-// if (test = 1) {
-//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#content") {
-//         console.log('content');
-//     }
-
-// }
-
-// if (test = 2) {
-//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
-//         console.log('about');
-//     }
-
-// }
-
-// if (test = 3) {
-//     if (window.location.href == "https://shoffya.github.io/RI-Slaughterhouse/#title2") {
-//         console.log('title2');
-//     }
-// }
