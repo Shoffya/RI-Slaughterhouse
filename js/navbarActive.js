@@ -45,7 +45,7 @@ setInterval(() => {
 
         console.log("content");
     }
-    else i(window.location == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
+    else if (window.location == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         nav1.classList.remove('active');
         nav3.classList.remove('active');
         nav2.classList.add('active');
