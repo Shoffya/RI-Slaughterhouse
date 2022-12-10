@@ -70,7 +70,7 @@
         <div id="recoverPassword" class="recoverPassword">
             <div class="form animationTitleTop">
                 <h3 class="caption animation">Type Your Email</h3>
-                <form>
+                <form action="">
                     <input id="email" type="email" class="email" placeholder="Email">
                     <input type="submit" class="button" value="Recover">
                 </form>
@@ -81,6 +81,11 @@
     <script src="./js/navbarActive.js"></script>
     <script src="./js/mobile-navbar.js"></script>
     <script src="./js/scroll-navbar.js"></script>
+    <script>
+        var input = document.querySelector("#email");
+        var texto = input.value;
+        console.log(texto);
+    </script>
 </body>
 
 </html>
