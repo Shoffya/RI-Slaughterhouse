@@ -7,7 +7,7 @@ var nav2 = document.getElementById('option2');
 var nav3 = document.getElementById('option3');
 
 setInterval(() => {
-    if (window.location == "/#home") {
+    if (window.location == "https://shoffya.github.io/RI-Slaughterhouse/#home") {
         nav2.classList.remove('active');
         nav3.classList.remove('active');
         nav1.classList.add('active');
@@ -15,7 +15,7 @@ setInterval(() => {
         about.style.display = "none";
         recoverPassword.style.display = "none";
     }
-    else if (window.location == "/#about") {
+    else if (window.location == "https://shoffya.github.io/RI-Slaughterhouse/#about") {
         nav1.classList.remove('active');
         nav3.classList.remove('active');
         nav2.classList.add('active');
@@ -23,7 +23,7 @@ setInterval(() => {
         homeStart.style.display = "none";
         recoverPassword.style.display = "none";
     }
-    else if (window.location == "/#recoverPassword") {
+    else if (window.location == "https://shoffya.github.io/RI-Slaughterhouse/#recoverPassword") {
         nav1.classList.remove('active');
         nav2.classList.remove('active');
         nav3.classList.add('active');
