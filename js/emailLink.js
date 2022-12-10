@@ -3,4 +3,4 @@ var testEmail = email.value;
 
 setInterval(() => {
     console.log(testEmail);
-}, 1000)
+}, 1000);
