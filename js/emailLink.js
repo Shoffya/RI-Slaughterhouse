@@ -1,3 +1,6 @@
 var email = document.getElementById("email");
 var testEmail = email.value;
-console.log(testEmail);
+
+setInterval(() => {
+    console.log(testEmail);
+}, 1000)
