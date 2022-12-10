@@ -1,4 +1,4 @@
-var testLink = document.getElementById("email").value;
+var testLink = document.getElementById("email");
 var button = document.querySelector(".button");
 
 button.addEventListener('click', () => {
