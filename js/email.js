@@ -1,6 +1,7 @@
-var testLink = document.getElementById("email");
+var email = document.querySelector("#email");
+var testEmail = email.value;
 var button = document.querySelector(".button");
 
 button.addEventListener('click', () => {
-    console.log(testLink);
+    console.log(testEmail);
 });
