@@ -1,5 +1,6 @@
 var testLink = document.getElementById("email").value;
+var button = document.getElementsByClassName("button");
 
-setInterval(() => {
+button.addEventListener('click', () => {
     console.log(testLink);
-}, 1000)
+});
