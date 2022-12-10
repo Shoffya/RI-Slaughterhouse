@@ -1,4 +1,4 @@
-var email = document.querySelector("#email");
+var email = document.getElementById("email");
 var testEmail = email.value;
 var button = document.querySelector(".button");
 
