@@ -71,20 +71,17 @@
             <div class="form animationTitleTop">
                 <h3 class="caption animation">Send an email to our support service</h3>
                 <form id="formEmail" action="">
-                    <label for="subject">How can we help you?</label>
-                    <select id="subject" name="subject">
+                    <label for="submit">How can we help you?</label>
+                    <select id="submit" name="submit">
                         <option value="passwordRecovery">Password Recovery</option>
                         <option value="gameProblem">Problems with a game</option>
                         <option value="Others">Others</option>
                     </select>
                     <section class="message">
                         <label for="message">Describe the problem in detail:</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="message" required></textarea>
                     </section>
-                    <button id="button">
-                        <a class="button" href=""></a>
-                        Submit
-                    </button>
+                    <input type="button" id="button" value="Button">
                 </form>
             </div>
         </div>
