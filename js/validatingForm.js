@@ -1,6 +1,10 @@
 let btn = document.querySelector("#message");
 
-function validatingForm() {
+// function validatingForm() {
+
+// }
+
+btn.addEventListener('click', () => {
     var message = document.getElementById("formEmail").elements.namedItem("message").value;
     var select = document.getElementById("Support");
     var opcaoTexto = select.options[select.selectedIndex].text;
@@ -8,8 +12,4 @@ function validatingForm() {
 
     console.log(opcaoTexto); // Ferrari
     console.log(opcaoValor); // ferrari
-}
-
-btn.addEventListener('click', () => {
-    validatingForm();
 });
