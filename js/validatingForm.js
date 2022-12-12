@@ -9,6 +9,7 @@ function validatingForm() {
 
     if (opcaoTexto == "Password Recovery") {
         tagA.href = "mailto:turpyun.rigames@gmail.com?subject=" + opcaoTexto;
+        console.log(tagA);
     }
 }
 
