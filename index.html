@@ -36,7 +36,7 @@
             <ul id="navBarList" class="nav-list">
                 <li><a id="option1" href="#home">Home</a></li>
                 <li><a id="option2" href="#about">About</a></li>
-                <li><a id="option3" class="recovery" href="#recoverPassword">Recovery</a></li>
+                <li><a id="option3" class="recovery" href="#supportService">Support</a></li>
             </ul>
         </nav>
     </header>
@@ -67,12 +67,21 @@
             </div>
         </div>
 
-        <div id="recoverPassword" class="recoverPassword">
+        <div id="supportService" class="supportService">
             <div class="form animationTitleTop">
                 <h3 class="caption animation">Type Your Email</h3>
                 <form id="formEmail" action="">
-                    <input id="email" type="email" class="email" placeholder="Email">
-                    <input type="submit" class="button" value="Recover">
+                    <label for="Support">How can we help you?</label>
+                    <select id="Support" name="Support">
+                        <option value="passwordRecovery">Password Recovery</option>
+                        <option value="gameProblem">Problems with a game</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <section class="message">
+                        <label for="Support">Describe the problem in detail:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </section>
+                    <input type="button" id="recovery" value="recovery">
                 </form>
             </div>
         </div>

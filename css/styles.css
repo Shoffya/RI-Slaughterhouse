@@ -213,7 +213,7 @@ section {
     overflow: hidden;
 }
 
-#home .recoverPassword {
+#home .supportService {
     width: 100vw;
     height: 100vh;
     display: none;
@@ -222,11 +222,11 @@ section {
     background: rgba(255, 255, 255, 0.527);
 }
 
-#home .recoverPassword {
+#home .supportService {
     display: none;
 }
 
-#home .recoverPassword .form {
+#home .supportService .form {
     width: 60%;
     min-width: 300px;
     display: flex;
@@ -236,7 +236,7 @@ section {
     padding: 10px 0;
 }
 
-#home .recoverPassword .form form {
+#home .supportService .form form {
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -244,12 +244,12 @@ section {
     align-items: center;
 }
 
-#home .recoverPassword .form h3 {
+#home .supportService .form h3 {
     margin-top: 10px;
     color: #000000;
 }
 
-#home .recoverPassword .form form .email {
+#home .supportService .form form .email {
     width: 150px;
     margin: 10px 5px;
     padding-left: 4px;
@@ -257,7 +257,7 @@ section {
     border-radius: 5px;
 }
 
-#home .recoverPassword .form form .button {
+#home .supportService .form form .button {
     margin-bottom: 10px;
     padding: 3px 10px;
     border: none;
@@ -266,7 +266,7 @@ section {
     border-radius: 5px;
 }
 
-#home .recoverPassword .form form .button:hover {
+#home .supportService .form form .button:hover {
     background: #0000007c;
     color: white;
 }
