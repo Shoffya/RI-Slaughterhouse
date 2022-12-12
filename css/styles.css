@@ -237,36 +237,36 @@ section {
 }
 
 #home .supportService .form form {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    max-width: 30rem;
 }
 
-#home .supportService .form h3 {
-    margin-top: 10px;
-    color: #000000;
+label,
+#Support,
+textarea,
+#button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
 }
 
-#home .supportService .form form .email {
-    width: 150px;
-    margin: 10px 5px;
-    padding-left: 4px;
-    border: 1px solid #888888;
-    border-radius: 5px;
+#Support,
+textarea {
+    margin-bottom: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.664);
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
 }
 
-#home .supportService .form form .button {
-    margin-bottom: 10px;
-    padding: 3px 10px;
-    border: none;
-    background: #ffffff7c;
+label {
     color: black;
-    border-radius: 5px;
 }
 
-#home .supportService .form form .button:hover {
-    background: #0000007c;
-    color: white;
+textarea {
+    min-height: 10rem;
+    resize: vertical;
 }
