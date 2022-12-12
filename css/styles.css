@@ -270,3 +270,13 @@ textarea {
     min-height: 10rem;
     resize: vertical;
 }
+
+#button {
+    background: rgba(0, 0, 0, 0.527);
+    color: white;
+}
+
+#button:hover {
+    background: rgba(255, 255, 255, 0.527);
+    color: rgb(0, 0, 0);
+}
