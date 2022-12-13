@@ -15,6 +15,7 @@ function validatingForm() {
         btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
     }
     else {
+        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
         message.style.display = "flex";
     }
 }
