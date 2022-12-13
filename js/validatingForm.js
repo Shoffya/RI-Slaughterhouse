@@ -1,12 +1,29 @@
+var message = document.querySelector(".message");
+var messageTextarea = document.querySelector("#message").required;
+
 function validatingForm() {
-    // var message = document.getElementById("formEmail").elements.namedItem("message").value;
     var btnSubmit = document.querySelector(".btnSubmit");
     var subject = document.getElementById("subject");
     var opcaoTexto = subject.options[subject.selectedIndex].text;
-    var opcaoValor = subject.options[subject.selectedIndex].value;
 
     if (opcaoTexto == "Password Recovery") {
+        message.style.display = "none";
         btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
-        console.log(opcaoTexto);
+    }
+    else if (opcaoTexto == "Problems with a game") {
+        message.style.display = "flex";
+        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
+    }
+    else {
+        message.style.display = "flex";
     }
 }
+
+// function messageForm() {
+//     if (message.style.display == "flex") {
+//         message.required;
+//         if(messageTextarea.value == null){
+            
+//         }
+//     }
+// }
