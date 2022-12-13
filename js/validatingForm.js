@@ -6,7 +6,7 @@ function validatingForm() {
     var opcaoValor = subject.options[subject.selectedIndex].value;
 
     if (opcaoTexto == "Password Recovery") {
-        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
+        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=Password Recovery`;
         console.log(opcaoTexto);
     }
 }
