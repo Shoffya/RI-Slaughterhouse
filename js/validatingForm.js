@@ -1,4 +1,4 @@
-function validatingForm(id) {
+function validatingForm() {
     // var message = document.getElementById("formEmail").elements.namedItem("message").value;
     var message = document.querySelector(".message");
     var btnSubmit = document.querySelector(".btnSubmit");
