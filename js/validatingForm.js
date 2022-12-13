@@ -1,6 +1,4 @@
-let btn = document.querySelector("#button");
-
-function validatingForm() {
+function validatingForm(id) {
     // var message = document.getElementById("formEmail").elements.namedItem("message").value;
     var message = document.querySelector(".message");
     var btnSubmit = document.querySelector(".btnSubmit");
@@ -11,7 +9,3 @@ function validatingForm() {
         btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
     }
 }
-
-btn.addEventListener('click', () => {
-    validatingForm();
-});
