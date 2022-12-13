@@ -1,8 +1,8 @@
 function validatingForm() {
     // var message = document.getElementById("formEmail").elements.namedItem("message").value;
     var subject = document.getElementById("subject");
-    var opcaoTexto = subject.options[select.selectedIndex].text;
-    var opcaoValor = subject.options[select.selectedIndex].value;
+    var opcaoTexto = subject.options[subject.selectedIndex].text;
+    var opcaoValor = subject.options[subject.selectedIndex].value;
     console.log(opcaoTexto); // Ferrari
     console.log(opcaoValor); // ferrari
 
