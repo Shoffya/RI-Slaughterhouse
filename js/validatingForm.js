@@ -9,19 +9,13 @@ var opcaoTexto = subject.options[subject.selectedIndex].text;
 
 setInterval(() => {
     if (opcaoTexto == "Password Recovery") {
-        message.style.display = "none";
-        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
-
+        console.log(opcaoTexto);
     }
-    else if (opcaoTexto == "Problems with a game" || opcaoTexto == "Others") {
-        // message.style.display = "flex";
-        // if (messageTextarea.value == "") {
-        //     alert("Preencha por favor");
-        // }
-        // else {
-        //     btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}&body=${message.value}`;
-        // }
-        console.log(messageTextarea.value);
+    else if (opcaoTexto == "Problems with a game") {
+        console.log(opcaoTexto);
+    }
+    else if (opcaoTexto == "Others") {
+        console.log(opcaoTexto);
     }
 }, 500);
 
