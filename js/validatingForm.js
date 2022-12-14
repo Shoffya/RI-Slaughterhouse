@@ -6,18 +6,19 @@ function validatingForm() {
     var subject = document.getElementById("subject");
     var opcaoTexto = subject.options[subject.selectedIndex].text;
 
-    if (opcaoTexto == "Password Recovery") {
-        message.style.display = "none";
-        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
-    }
-    else {
-        message.style.display = "flex";
-        if (messageTextarea.value == null) {
-            alert("Preencha por favor");
+    setInterval(() => {
+        if (opcaoTexto == "Password Recovery") {
+            message.style.display = "none";
+            btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
         }
-        else {
-            btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}&body=${message.value}`;
+        else if (opcaoTexto == "Problems with a game" || opcaoTexto == "Others") {
+            message.style.display = "flex";
+            if (messageTextarea.value == null) {
+                alert("Preencha por favor");
+            }
+            else {
+                btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}&body=${message.value}`;
+            }
         }
-    }
-
+    }, 500)
 }
