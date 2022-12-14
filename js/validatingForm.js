@@ -1,5 +1,5 @@
 var message = document.querySelector(".message");
-var messageTextarea = document.querySelector("#message").required;
+var messageTextarea = document.querySelector("#message");
 
 function validatingForm() {
     var btnSubmit = document.querySelector(".btnSubmit");
@@ -10,21 +10,13 @@ function validatingForm() {
         message.style.display = "none";
         btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
     }
-    else if (opcaoTexto == "Problems with a game") {
-        message.style.display = "flex";
-        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
-    }
     else {
-        btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}`;
         message.style.display = "flex";
+        if (message.value == null) {
+            alert("Preencha por favor");
+        }
+        else {
+            btnSubmit.href = `mailto:turpyun.rigames@gmail.com?subject=${opcaoTexto}&body=${message.value}`;
+        }
     }
 }
-
-// function messageForm() {
-//     if (message.style.display == "flex") {
-//         message.required;
-//         if(messageTextarea.value == null){
-            
-//         }
-//     }
-// }
