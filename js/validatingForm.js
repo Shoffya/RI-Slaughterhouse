@@ -11,8 +11,9 @@ btn.addEventListener('click', () => {
     }
     else {
         // alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     }
 });
