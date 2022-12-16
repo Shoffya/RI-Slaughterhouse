@@ -1,4 +1,4 @@
-let label = document.getElementById("label")
+let label = document.getElementById("messageL")
 let select = document.querySelector('#subject');
 let btn = document.querySelector('#submit');
 
