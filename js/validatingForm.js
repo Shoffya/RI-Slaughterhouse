@@ -1,6 +1,7 @@
 let label = document.getElementById("messageL")
 let select = document.querySelector('#subject');
 let btn = document.querySelector('#submit');
+let alertBootstrap = document.querySelector('.alert');
 
 btn.addEventListener('click', () => {
     if (message.style.display == "none") {
@@ -10,7 +11,8 @@ btn.addEventListener('click', () => {
         window.location.href = `mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}&body=${message.value}`;
     }
     else {
-        alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
+        // alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
+        alertBootstrap.style.display = "flex";
     }
 });
 
@@ -34,6 +36,7 @@ function updateSelect() {
     }
     else if (value == "Others") {
         message.style.display = "flex";
+
         label.style.display = "flex";
         console.log(text);
     }
