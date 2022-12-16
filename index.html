@@ -72,18 +72,14 @@
                 <h3 class="caption animation">Send an email to our support service</h3>
                 <form id="formEmail" action="">
                     <label for="subject">How can we help you?</label>
-                    <select id="subject" name="subject">
+                    <select id="subject" name="subject" onchange="updateSelect()">
                         <option value="passwordRecovery">Password Recovery</option>
                         <option value="gameProblem">Problems with a game</option>
                         <option value="Others">Others</option>
                     </select>
-                    <section class="message">
-                        <label for="message">Describe the problem in detail:</label>
-                        <textarea id="message" name="message"></textarea>
-                    </section>
-                    <!-- <section class="submit">
-                        <a id="button" class="btnSubmit" href="#" onclick="validatingForm()">Submit</a>
-                    </section> -->
+                    <label id="messageL" for="message">Describe the problem in detail:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <input type="button" id="submit" value="submit">
                 </form>
             </div>
         </div>

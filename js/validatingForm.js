@@ -1,15 +1,38 @@
-var subject = document.getElementById("#subject");
+let label = document.getElementById("label")
+let select = document.querySelector('#subject');
+let btn = document.querySelector('#submit');
 
-setInterval(() => {
-    if (subject.value == "Password Recovery") {
-        console.log(subject.text);
+btn.addEventListener('click', () => {
+    if (message.style.display == "flex" && message.value == "") {
+        alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
+    } else {
+        console.log(message.value);
     }
-    else if (subject.value == "Problems with a game") {
-        console.log(subject.text);
-    }
-    else if (subject.value == "Others") {
-        console.log(subject.text);
-    }
-}, 500);
+});
 
+function updateSelect() {
+    let message = document.getElementById("message")
 
+    let optionValue = select.options[select.selectedIndex];
+
+    let value = optionValue.value;
+    let text = optionValue.text;
+
+    if (value == "passwordRecovery") {
+        message.style.display = "none";
+        label.style.display = "none";
+        console.log(text);
+    }
+    else if (value == "gameProblem") {
+        message.style.display = "flex";
+        label.style.display = "flex";
+        console.log(text);
+    }
+    else if (value == "Others") {
+        message.style.display = "flex";
+        label.style.display = "flex";
+        console.log(text);
+    }
+}
+
+updateSelect();
