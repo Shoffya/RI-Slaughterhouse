@@ -11,7 +11,6 @@ btn.addEventListener('click', () => {
         window.location.href = `mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}&body=${message.value}`;
     }
     else {
-        // alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
         alertBootstrap.style.display = "flex";
     }
 });
