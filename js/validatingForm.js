@@ -10,11 +10,7 @@ btn.addEventListener('click', () => {
         window.location.href = `mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}&body=${message.value}`;
     }
     else {
-        // alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+        alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
     }
 });
 
