@@ -78,7 +78,7 @@
                         <option value="Others">Others</option>
                     </select>
                     <label id="messageL" for="message">Describe the problem in detail:</label>
-                    <textarea id="message" name="message" data-toggle="" data-placement="right"
+                    <textarea id="message" name="message" data-toggle="tooltip" data-placement="right"
                         title="Tooltip na parte superior"></textarea>
                     <input type="button" id="submit" value="submit">
                 </form>
@@ -90,6 +90,11 @@
     <script src="./js/mobile-navbar.js"></script>
     <script src="./js/scroll-navbar.js"></script>
     <script src="./js/validatingForm.js"></script>
+    <!-- <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script> -->
 </body>
 
 </html>
