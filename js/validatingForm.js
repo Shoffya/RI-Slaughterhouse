@@ -5,12 +5,14 @@ let alertBootstrap = document.querySelector('.alert');
 
 btn.addEventListener('click', () => {
     if (message.style.display == "none") {
+        alertBootstrap.style.display = "none";
         window.location.href = `mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}`;
     }
     else if (message.style.display == "flex" && message.value != "") {
+        alertBootstrap.style.display = "none";
         window.location.href = `mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}&body=${message.value}`;
     }
-    else {
+    else if (message.style.display == "flex" && message.value == "") {
         alertBootstrap.style.display = "flex";
     }
 });
