@@ -4,10 +4,10 @@ let btn = document.querySelector('#submit');
 
 btn.addEventListener('click', () => {
     if (message.style.display == "none") {
-        window.location.href = window.location.href + `/mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}`;
+        window.onpointermove(`/mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}`);
     }
     else if (message.style.display == "flex" && message.value != "") {
-        window.location.href = window.location.href + `/mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}&body=${message.value}`;
+        window.open(`/mailto:turpyun@gmail.com?subject=${select.options[select.selectedIndex].value}&body=${message.value}`);
     }
     else {
         alert("por favor preencha o campo de menssagem para que a gente possa te ajudar!");
